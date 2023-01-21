@@ -1,0 +1,37 @@
+@media only screen and (max-width:768px) {
+    .services__content {
+        height: auto;
+        padding: 30px 0;
+    }
+    .Projects {
+        height: auto !important;
+        padding: 30px 0;
+    }
+    .Experience {
+        height: auto;
+        padding: 30px 0;
+    }
+    .Achievement__content {
+        height: auto;
+        padding: 30px 0;
+    }
+    .Hire_Me__content {
+        height: auto;
+        padding: 30px 0;
+    }
+    .Testimonials__contents {
+        height: auto;
+        padding: 30px 0;
+    }
+    .Contact__contents {
+        height: auto;
+        padding: 30px 0;
+    }
+    .body-pd {
+        padding: 0 0 0 0;
+    }
+    .contact_icon_scetion .icon {
+        width: 40px;
+        height: 40px;
+    }
+}
