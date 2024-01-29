@@ -24,15 +24,28 @@
 
 	<link rel="stylesheet" href="assets/css/plugins/slicknav.css" >
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<style>
+	    .disclaimer{
+	        display:none;
+	    }
+	</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="data/index.js"></script>
 
 </head>
 
 <body class=" animsition" onload="screenLoad()" style="scroll-behavior: smooth;">
 
 	<!--====== Loading Screen ====== -->
-    <div id="Loading" class="loading__backround">
+    <div id="pre_loader" class="loading__backround">
         <div class="loading">
-            <span>Loading...</span>
+            <div class="d-flex justify-content-center align-items-center pre_loader_content ring">
+                <img src="assets/img/MY_IMAGE.png" alt="">
+                <span></span>
+            </div>
         </div>
     </div>
 
@@ -55,7 +68,6 @@
 
         <div class="menu-bar">
             <div class="menu">
-
                 <ul class="menu-links" id="menu_links">
                     <li class="nav-link">
                         <a class="menu_bar_item menu_home active" href="#Home">
@@ -70,38 +82,30 @@
                             <span class="text nav-text">Services</span>
                         </a>
                     </li>
-
 					<li class="nav-link">
                         <a class="menu_bar_item menu_experience" href="#Experience">
                             <i class='bx bx-bar-chart-alt-2 icon' ></i>
                             <span class="text nav-text">Resume</span>
                         </a>
                     </li>
-
                     <li class="nav-link">
                         <a class="menu_bar_item menu_skills" href="#Skills">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav-text">About Me</span>
                         </a>
                     </li>
-
-
                     <li class="nav-link">
                         <a class="menu_bar_item menu_portfolio" href="#Portfolio">
                             <i class='bx bx-cabinet icon'></i>
                             <span class="text nav-text">Portfolio</span>
                         </a>
                     </li>
-
-					
-
 					<li class="nav-link">
                         <a class="menu_bar_item menu_testimonials" href="#Testimonials">
                             <i class='bx bx-comment-dots icon'></i>
                             <span class="text nav-text">Testimonials</span>
                         </a>
                     </li>
-
                     <li class="nav-link">
                         <a class="menu_bar_item menu_contact" href="#Contact">
                             <i class='bx bx-mail-send icon'></i>
@@ -110,20 +114,6 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- <div class="bottom-content">
-                <li class="mode">
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li>
-            </div> -->
         </div>
     </nav>
 
@@ -131,7 +121,6 @@
 	<header class="mobile-header">  
 		<img src="assets/img/MY_IMAGE.png" style="border-radius: 50px;" />
 		<h4>Ahasun_H<br><span>Web developer</span></h4>
-		
 	</header>
 	<!--/ Mobile Top Header --> 
 
@@ -182,19 +171,12 @@
 	</div>
 	<!--Site Overlay-->
 	<div class="vlt-site-overlay"></div>
-	<!--Fixed Socials-->
-	<!-- <div class="vlt-fixed-socials">
-		<a href="#" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-		<a href="#" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-		<a href="#" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
-		<a href="#" target="_blank"><i class='bx bxl-git' ></i></a>
-	</div> -->
+
 	<!--Main-->
 	<main class="vlt-main">
 		<!--Fullpage Slider-->
 		<div class="vlt-fullpage-slider" data-loop-top="" data-loop-bottom="" data-speed="800">
-			<!--Home-->
-			<!--Section-->
+			<!-- Start:Home Section-->
 			<section class="vlt-section pp-scrollable" data-anchor="Home" id="Home" data-brightness="dark" style="background-image: url(assets/img/root/hero-bg.png);">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
@@ -209,26 +191,27 @@
 								<div class="col-lg-7 offset-lg-1">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<h5 class="vlt-display-1 has-white-color">Md.Ahasun Habib</h5>
+										<h5 class="vlt-display-1 has-white-color" id="home_user_name">Md.Ahasun Habib</h5>
 										<div class="vlt-gap-10"></div>
-										<h1 class="vlt-large-heading has-white-color">I’m Web<br>Developer</h1>
+										<h1 class="vlt-large-heading has-white-color">I’m <br /><spna id="home_user_profession" >WebDeveloper</spna></h1>
 										<div class="vlt-gap-40"></div>
 										<div class="row">
 											<div class="col-auto">
 												<!--Counter Up Small-->
-												<div class="vlt-counter-up-small" data-ending-number="12" data-animation-speed="1000" data-delimiter=""><span class="counter">0</span>
+												<div class="vlt-counter-up-small" data-ending-number="12" data-animation-speed="1000" data-delimiter=""><span class="counter" id="home_completed_project">0</span>
 													<h6 class="vlt-display-1">Completed<br>projects</h6>
 												</div>
 												<div class="vlt-gap-20--sm"></div>
 											</div>
 											<div class="col-auto">
 												<!--Counter Up Small-->
-												<div class="vlt-counter-up-small" data-ending-number="6" data-animation-speed="1000" data-delimiter=""><span class="counter">0</span>
-													<h6 class="vlt-display-1">Sutisfied<br>customers</h6>
+												<div class="vlt-counter-up-small" data-ending-number="6" data-animation-speed="1000" data-delimiter=""><span class="counter" id="home_satisfied_user">0</span>
+													<h6 class="vlt-display-1">Satisfied<br>customers</h6>
 												</div>
 											</div>
 										</div>
-										<div class="vlt-gap-40"></div><a class="vlt-link has-white-color" href="#">Watch Resume</a>
+										<div class="vlt-gap-40"></div>
+                                        <a class="vlt-link has-white-color" id="resume_one" href="#">Watch Resume</a>
 									</div>
 								</div>
 							</div>
@@ -236,8 +219,9 @@
 					</div>
 				</div>
 			</section>
-			<!--Services-->
-			<!--Section-->
+			<!-- End:Home Section-->
+
+			<!-- Start:Services Section-->
 			<section class="vlt-section pp-scrollable" data-anchor="Services" id="Services" data-brightness="light" >
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
@@ -252,7 +236,8 @@
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
 										<!--Counter Up-->
-										<div class="vlt-counter-up" data-ending-number="6" data-animation-speed="1000" data-delimiter=""><span class="counter">0</span><sup>+</sup>
+										<div class="vlt-counter-up" id="service_vlt_counter_up" data-ending-number="0" data-animation-speed="1000" data-delimiter="">
+											<span id="service_experience_year">0</span><sup>+</sup>
 										</div>
 										<div class="vlt-gap-40"></div>
 										<h6>Years <br>Experience <br>Working</h6>
@@ -262,73 +247,14 @@
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
 										<h4>
-											design and develop services for customers of all sizes, specializing in creating  
-											<span class="has-first-color">
+											<span id="service_title">design and develop services for customers of all sizes, specializing in creating</span> 
+											<span class="has-first-color" id="service_title_color">
 												stylish, modern websites, web services and online stores.
 											</span>
 										</h4>
 									</div>
 									<div class="vlt-gap-70"></div>
-									<div class="row">
-										<div class="col-md-6">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-												<!--Services-->
-												<div class="vlt-services">
-													<h5 class="vlt-services__title">
-														Web Design
-													</h5>
-													<p class="vlt-services__text">
-														Web design means creating websites with a user-friendly structure and with an aesthetic approach.
-													</p>
-												</div>
-											</div>
-											<div class="vlt-gap-40"></div>
-										</div>
-										<div class="col-md-6">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:300ms; animation-duration:700ms;">
-												<!--Services-->
-												<div class="vlt-services">
-													<h5 class="vlt-services__title">
-														WordPress
-													</h5>
-													<p class="vlt-services__text">
-														Web design means creating websites with a user-friendly structure and with an aesthetic approach.
-													</p>
-												</div>
-											</div>
-											<div class="vlt-gap-40"></div>
-										</div>
-										<div class="col-md-6">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:400ms; animation-duration:700ms;">
-												<!--Services-->
-												<div class="vlt-services">
-													<h5 class="vlt-services__title">
-														App Development
-													</h5>
-													<p class="vlt-services__text">
-														With the world going mobile, the importance of apps is increasing by the day.
-													</p>
-												</div>
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-										<div class="col-md-6">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:500ms; animation-duration:700ms;">
-												<!--Services-->
-												<div class="vlt-services">
-													<h5 class="vlt-services__title">
-														Web Development
-													</h5>
-													<p class="vlt-services__text">
-														Web Development consists of two segments front end development and backend development.
-													</p>
-												</div>
-											</div>
-										</div>
+									<div class="row" id="service_item">
 									</div>
 								</div>
 							</div>
@@ -347,110 +273,22 @@
 							<div class="row">
 								<div class="col-lg-10 offset-lg-1">
 									<h4 class="has-white-color">Education</h4>
-									<hr>
-									<div class="resume-step">
-										<div class="resume-status">
-										  <span class="resume-status-dot"></span>
-										  <span class="resume-status-line"></span>
-										</div>
-										<div class="resume-text">
-										  <p class="vlt-timeline-item__title">B.Sc in Computer Science & Engineering</p>
-										  <span class="vlt-timeline-item__year">2016 - Continue</span>
-										  <h5 class="vlt-timeline-item__text" style="font-weight: normal;color: #fff;">Institute of Science Trade and Technology (ISTT)</h5>
-										</div>
-									</div>
-									<div class="resume-step">
-										<div class="resume-status">
-										  <span class="resume-status-dot"></span>
-										  <span class="resume-status-line"></span>
-										</div>
-										<div class="resume-text">
-										  <p class="vlt-timeline-item__title">Higher Secondary Certificate (HSC) in Science</p>
-										  <span class="vlt-timeline-item__year">2013 - 2015</span>
-										  <h5 class="vlt-timeline-item__text" style="font-weight: normal;color: #fff;">Nawab Habibullah Model School & College</h5>
-										</div>
-									</div>
-									<div class="resume-step">
-										<div class="resume-status">
-										  <span class="resume-status-dot"></span>
-										  <span class="resume-status-line"></span>
-										</div>
-										<div class="resume-text">
-										  <p class="vlt-timeline-item__title">Secondary School Certificate (SSC) in Science</p>
-										  <span class="vlt-timeline-item__year">2011 - 2013</span>
-										  <h5 class="vlt-timeline-item__text" style="font-weight: normal;color: #fff;">Nawab Habibullah Model School & College</h5>
-										</div>
-									</div>
-
+									<hr >
+									<div id="education_items"></div>
 									<h4>Professional Experience</h4>
 									<hr>
-									<div class="resume-step">
-										<div class="resume-status">
-										  <span class="resume-status-dot"></span>
-										  <span class="resume-status-line"></span>
-										</div>
-										<div class="resume-text">
-										  <p>Techno Outsource BD</p>
-										  <span>1 Year</span>
-										  <h5>Design, development and implementation of Web Application and Web Site</h5>
-										</div>
-									</div>
+									<div id="professional_experience"></div>
 									<div class="resume-step"></div>
-
-
 									<h4>Training Experience</h4>
 									<hr>
-									<div class="resume-step">
-										<div class="resume-status">
-										  <span class="resume-status-dot"></span>
-										  <span class="resume-status-line"></span>
-										</div>
-										<div class="resume-text">
-										  <p>Skill Develpment for Mobile Game & Applicatioin Project ( Internship )</p>
-										  <span>2019</span>
-										  <h5>Ticon, Workspace Infotech LTD.</h5>
-										</div>
-									</div>
-									<div class="resume-step">
-										<div class="resume-status">
-										  <span class="resume-status-dot"></span>
-										  <span class="resume-status-line"></span>
-										</div>
-										<div class="resume-text">
-										  <p>Skill Develpment for Mobile Game & Applicatioin Project ( Ios App Develpment )</p>
-										  <span>2018</span>
-										  <h5>Digicon.</h5>
-										</div>
-									</div>
-									<div class="resume-step">
-										<div class="resume-status">
-										  <span class="resume-status-dot"></span>
-										  <span class="resume-status-line"></span>
-										</div>
-										<div class="resume-text">
-										  <p>Skill Develpment for Mobile Game & Applicatioin Project ( Android App Develpment )</p>
-										  <span>2018</span>
-										  <h5>BCIIT.</h5>
-										</div>
-									</div>
-									<div class="resume-step">
-										<div class="resume-status">
-										  <span class="resume-status-dot"></span>
-										  <span class="resume-status-line"></span>
-										</div>
-										<div class="resume-text">
-										  <p>Web Design</p>
-										  <span>2017</span>
-										  <h5>SR Institute of Design</h5>
-										</div>
-									</div>
+                                    <div id="training_experience"></div>
 									<div class="resume-step"></div>
 
 									<div class="vlt-gap-50"></div>
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
 										<!--Button-->
-										<a class="vlt-btn vlt-btn--primary" href="#" target="_self">
+										<a class="vlt-btn vlt-btn--primary" id="resume_two" href="#" target="_self">
 											<span class="vlt-btn__text">Download Resume</span>
 											<span class="vlt-btn__icon vlt-btn__icon--right">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
@@ -460,16 +298,13 @@
 											</span>
 										</a>
 									</div>
-
-
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!--Skills-->
-			<!--Section-->
+			<!-- Start: About Me -->
 			<section class="vlt-section pp-scrollable" data-anchor="Skills" id="Skills" data-brightness="light">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
@@ -483,7 +318,7 @@
 								<div class="col-lg-4 offset-lg-1">
 									<div class="vlt-slide-photo">
 										<div class="vlt-slide-photo__inside">
-											<img src="assets/img/loding.gif" data-src="assets/img/my_image.jpg" alt="">
+											<img id="my_image" src="assets/img/loding.gif" data-src="assets/img/my_image.jpg" alt="">
 										</div>
 										<div class="vlt-slide-photo__particle vlt-fade-in-bottom--small has-border-radius has-box-shadow" style="top: -50px; right: -40px; width: 100px; transition-delay: 300ms;"><img src="assets/img/root/parallax-particle-01.png" alt=""></div>
 										<div class="vlt-slide-photo__particle vlt-fade-in-bottom--small has-border-radius has-box-shadow" style="top: 40px; left: -30px; width: 80px; transition-delay: 600ms;"><img src="assets/img/root/parallax-particle-02.png" alt=""></div>
@@ -495,9 +330,9 @@
 								<div class="col-lg-5 offset-lg-1">
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-										<h4>I'm <span class="has-first-color">Md.Ahasun Habib</span></h4>
+										<h4>I'm <span class="has-first-color" id="my_name">Md.Ahasun Habib</span></h4>
 										<div class="vlt-gap-20"></div>
-										<p>from Uttara, Dhaka. My birthplace is Cumilla district. I have completed my B.Sc in CSE from Dhaka Institute of Science Trade & Technology (ISTT) University in 2021. I have been familiar with PHP and Laravel for over 1 years. My dream is to be a Full Stack Software Engineer and I'm working heart and soul to make my dream true. Now I am looking for a job to improve my skills and build my career.</p>
+										<p id="about_me">from Uttara, Dhaka. My birthplace is Cumilla district. I have completed my B.Sc in CSE from Dhaka Institute of Science Trade & Technology (ISTT) University in 2021. I have been familiar with PHP and Laravel for over 1 years. My dream is to be a Full Stack Software Engineer and I'm working heart and soul to make my dream true. Now I am looking for a job to improve my skills and build my career.</p>
 									</div>
 									<div class="vlt-gap-50"></div>
 									
@@ -506,31 +341,25 @@
 										<ul class="col-12 about_myself">
 											<li>
 												<i class='bx bx-chevron-right icon'></i>
-												 <strong>Date of Birth :</strong> 23 Jun 1998
+                                                <strong>Date of Birth :</strong> <spna id="dob">23 Jun 1998</spna>
 											</li>
 											<li>
 												<i class='bx bx-chevron-right icon'></i>
-												 <strong>Gender :</strong> Male
+												 <strong>Gender :</strong> <span id="gender">Male</span>
 											</li>
 											<li>
 												<i class='bx bx-chevron-right icon'></i>
-												 <strong>Mobile :</strong> +8801966205647
+                                                <strong>Mobile :</strong> <span id="mobile_number">+8801966205647</span>
 											</li>
 											<li>
 												<i class='bx bx-chevron-right icon'></i>
-												 <strong>Degree :</strong> B.Sc in CSE
+												 <strong>Email :</strong> <span id="email">habibahasun019@gmail.com</span>
 											</li>
 											<li>
 												<i class='bx bx-chevron-right icon'></i>
-												 <strong>Email :</strong> habibahasun019@gmail.com
+												 <strong>Address :</strong> <span id="address">Uttara,Dhaka,Bangladesh</span>
 											</li>
-											<li>
-												<i class='bx bx-chevron-right icon'></i>
-												 <strong>City :</strong> Uttara,Dhaka,Bangladesh
-											</li>
-											
 										</ul>
-										
 									</div>
 									<div class="vlt-gap-30"></div>
 								</div>
@@ -539,8 +368,9 @@
 					</div>
 				</div>
 			</section>
-			<!--Portfolio-->
-			<!--Section-->
+            <!-- End: About Me -->
+
+			<!-- Start:Portfolio Section-->
 			<section class="vlt-section pp-scrollable Portfolio" data-anchor="Portfolio" id="Portfolio" data-brightness="dark">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
@@ -548,160 +378,21 @@
 						<div class="vlt-section__ken-burn-background"><img src="assets/img/attachment-03.jpg" alt=""></div>
 						<div class="container">
 							<div class="portfolio_menu">
-								<ul>
-									<li class="control mixitup-control-active" data-filter="all">
-										<a href="#" class="mix_itup_menu nActive">All</a>
-									</li>
-									<li>/</li>
-									<li class="control" data-filter=".Web_Design">
-										<a href="#" class="mix_itup_menu">Web Design</a>
-									</li>
-									<li>/</li>
-									<li class="control" data-filter=".App_Development">
-										<a href="#" class="mix_itup_menu">App Development</a>
-									</li>
-									<li>/</li>
-									<li class="control" data-filter=".Wordpress">
-										<a href="#" class="mix_itup_menu">Wordpress</a>
-									</li>
-									<li>/</li>
-									<li class="control" data-filter=".Video_Editing">
-										<a href="#" class="mix_itup_menu">Video Editing</a>
-									</li>
+								<ul id="portfolio_menu">
 								</ul>
 							</div>
 	
 							<div class="gallery" data-ref="mixitup-container">
-								<div class="row col-12" style="margin: auto;">
-									
-									<!-- App -->
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix App_Development" data-ref="mixitup-target">
-										<img class="images" src="asset/img/loderimage.png" data-src="assets/img/portfolio/property_Rental.png">
-										<div class="images" style=""></div>
-										
-										<div class="portfolio_item_shadow">
-											<a href="https://github.com/Ahasun-h/PropertyRental">
-												<i class='bx bx-fullscreen icon'></i>
-											</a>
-										</div>
-									</div>
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix App_Development" data-ref="mixitup-target">
-										<img class="images" src="asset/img/loderimage.png" data-src="assets/img/portfolio/Karigor.png">
-										<div class="portfolio_item_shadow">
-											<a href="https://github.com/Ahasun-h/KarigorBangla">
-												<i class='bx bx-fullscreen icon'></i>
-											</a>
-										</div>
-									</div>
-
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix App_Development" data-ref="mixitup-target">
-										<img class="images" src="asset/img/loderimage.png" data-src="assets/img/portfolio/lets_chat.png ">
-										<div class="portfolio_item_shadow ">
-											<a href="https://github.com/Ahasun-h/Lets_Chat"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix App_Development" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/corona_update.png ">
-										<div class="portfolio_item_shadow ">
-											<a href="https://github.com/Ahasun-h/CoronaUpdateToday"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-
-									<!-- End: APP -->
-
-
-									<!-- Youtube -->
-
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Video_Editing" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/youtubeOne.png">
-										<div class="portfolio_item_shadow ">
-											<a href="https://www.youtube.com/watch?v=q2OEcWt2OZs"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Video_Editing" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/youtubeTwo.png ">
-										<div class="portfolio_item_shadow ">
-											<a href="# "><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Video_Editing" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/youtubeThree.png ">
-										<div class="portfolio_item_shadow ">
-											<a href="https://www.youtube.com/watch?v=bDy5_R8YIYk&t=6s"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-
-
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Video_Editing" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/youtubeFoure.png ">
-										<div class="portfolio_item_shadow ">
-											<a href="https://www.youtube.com/watch?v=XcOwzoUpbWs"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-
-									<!-- End:Youtube -->
-
-									<!-- Wordpress -->
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Wordpress" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/cyber_com.png">
-										<div class="portfolio_item_shadow ">
-											<a href="https://cybercombd.com"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Wordpress" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/Elizabeth_Global_education-min.png">
-										<div class="portfolio_item_shadow ">
-											<a href="http://smartofficemate.co.uk/vas_global_clone"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Wordpress" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/SIG-ProPerties-min.png">
-										<div class="portfolio_item_shadow ">
-											<a href="http://sigproperties.smartofficemate.co.uk"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Wordpress" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/SIG-Welfare-min.png">
-										<div class="portfolio_item_shadow ">
-											<a href="http://sigwelfare.smartofficemate.co.uk"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-									<!-- End:Wordpress -->
-
-									<!-- Web Designe -->
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Web_Design" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/naioryo.png">
-										<div class="portfolio_item_shadow ">
-											<a href="https://dev.naiyorbd.com"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-
-									<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix Web_Design" data-ref="mixitup-target">
-										<img class="images " src="asset/img/loderimage.png" data-src="assets/img/portfolio/student_conner-min.png">
-										<div class="portfolio_item_shadow ">
-											<a href="https://www.studentcorner.co.uk"><i class='bx bx-fullscreen icon'></i></a>
-										</div>
-									</div>
-									<!-- End:Web Designe -->
-
-
-
-									
+								<div class="row col-12" id="portfolio_item" style="margin: auto;">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+            <!-- End:Portfolio Section-->
 			
-			<!--Testimonials-->
-			<!--Section-->
+			<!-- Start:Testimonials -->
 			<section class="vlt-section pp-scrollable" data-anchor="Testimonials" id="Testimonials" data-brightness="light">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
@@ -716,7 +407,7 @@
 						<!-- <div class="vlt-section__ken-burn-background"><img src="assets/img/attachment-04.jpg" alt=""></div> -->
 						<div class="container">
 							<div class="row">
-								<div class="col-lg-10 offset-lg-1">
+								<div class="col-lg-10 offset-lg-1" >
 									<!--Animated Block-->
 									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
 										<div class="d-block d-md-flex align-items-center justify-content-between">
@@ -731,96 +422,13 @@
 										<!--Testimonial Slider-->
 										<div class="vlt-testimonial-slider">
 											<div class="swiper-container">
-												<div class="swiper-wrapper">
-
-													<!--Testimonial Item-->
-													<div class="vlt-testimonial-item" style="background: #0c5fc5 url(assets/img/root/cartographer.png) repeat;">
-														<div class="vlt-testimonial-item__avatar"><img src="assets/img/testimonials/manager.png" alt="Damien O'Ryan"></div>
-														<div class="vlt-testimonial-item__content">
-															<p>I have made so many deals with so many web designers, but only he is able to satisfy me with great professional work among all. Their quality of work is outstanding.</p>
-															<div class="vlt-testimonial-item__meta">
-																<h6> Mahzabin Akter Sarna</h6><span>Founder, Loveableskin</span>
-															</div>
-														</div>
-													</div>
-													<!--Testimonial Item-->
-
-													<!--Testimonial Item-->
-													<div class="vlt-testimonial-item" style="background: #0c5fc5 url(assets/img/root/cartographer.png) repeat;">
-														<div class="vlt-testimonial-item__avatar"><img src="assets/img/testimonials/rocy.jpg" alt="Damien O'Ryan"></div>
-														<div class="vlt-testimonial-item__content">
-															<p>Quality and time are always important for me. I can assure anyone that, he is the most reliable tech person I have ever worked with. Hemaintain the best quality as much as possible and try their best to maintain the required deadline.</p>
-															<div class="vlt-testimonial-item__meta">
-																<h6>Rocey Hasan</h6><span>Managing Director, MNS TEX Sourcing</span>
-															</div>
-														</div>
-													</div>
-													<!--Testimonial Item-->
-
-													<!--Testimonial Item-->
-													<div class="vlt-testimonial-item" style="background: #0c5fc5 url(assets/img/root/cartographer.png) repeat;">
-														<div class="vlt-testimonial-item__avatar"><img src="assets/img/testimonials/Nurul_Alam.jpg" alt="Damien O'Ryan"></div>
-														<div class="vlt-testimonial-item__content">
-															<p>Recently I have taken great support in learning about accessing my woo-commerce website. I am really amazed by his friendly and helpful behavior and excellent work on my website. His work is really satisfying.</p>
-															<div class="vlt-testimonial-item__meta">
-																<h6>Nurul Alam Siddik Babu</h6><span>CEO, Brand Market BD</span>
-															</div>
-														</div>
-													</div>
-													<!--Testimonial Item-->
-													
-													
+												<div class="swiper-wrapper" id="testimonial_item_append">
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="vlt-gap-70"></div>
-									<div class="row justify-content-md-between">
-
-										<div class="col-md-auto col-sm-4">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-												<!--Partner Logo-->
-												<div class="vlt-partner-logo" style="height:75px;"><img src="assets/img/client_logo/22.jpg" alt="Handmade" style="height:65px;"></div>
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-
-										<div class="col-md-auto col-sm-4">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-												<!--Partner Logo-->
-												<div class="vlt-partner-logo" style="height:75px;"><img src="assets/img/client_logo/45.jpg" alt="Handmade" style="height:100%;"></div>
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-
-										<div class="col-md-auto col-sm-4">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-												<!--Partner Logo-->
-												<div class="vlt-partner-logo" style="height:75px;"><img src="assets/img/client_logo/brandmarket.jpg" alt="Handmade" style="height:100%;"></div>
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-
-										<div class="col-md-auto col-sm-4">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-												<!--Partner Logo-->
-												<div class="vlt-partner-logo" style="height:75px;"><img src="assets/img/client_logo/Naiyor-Logo.png" alt="Handmade" style="height:100%;"></div>
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-
-										<div class="col-md-auto col-sm-4">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-												<!--Partner Logo-->
-												<div class="vlt-partner-logo" style="height:75px;"><img src="assets/img/client_logo/techno.png" alt="Handmade" style="height:100%;"></div>
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
+									<div class="row d-flex align-items-center justify-content-md-between owl-carousel owl-theme" id="work_with">
 
 									</div>
 								</div>
@@ -848,18 +456,24 @@
 										<div class="vlt-gap-50"></div>
 										<div class="has-white-color">
 											<h6 class="vlt-display-1 has-gray-color">Email:</h6>
-											<div class="vlt-gap-5"></div><a href="mailto:habibahasun019@gmail.com">habibahasun019@gmail.com</a>
+											<div class="vlt-gap-5"></div><a href="mailto:habibahasun019@gmail.com" id="contact_email">habibahasun019@gmail.com</a>
 										</div>
 										<div class="vlt-gap-30"></div>
 										<div class="has-white-color">
 											<h6 class="vlt-display-1 has-gray-color">Phone:</h6>
 											<div class="vlt-gap-5"></div>
-											<a href="tel:+8801966205647">+8801966205647</a>&nbsp;
-											<a href="tel:+8801687700203">+8801687700203</a>
+											<a href="tel:+8801966205647" id="contact_number">+8801966205647</a>&nbsp;
 										</div>
-										<div class="vlt-gap-40"></div><a class="vlt-btn vlt-btn--secondary" target="_blank" href="https://goo.gl/maps/KpjDNkccuhw96Rst9"><span class="vlt-btn__text">Get direction</span><span class="vlt-btn__icon vlt-btn__icon--right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+										<div class="vlt-gap-40"></div>
+                                        <a class="vlt-btn vlt-btn--secondary" target="_blank" id="contact_location" href="https://goo.gl/maps/KpjDNkccuhw96Rst9">
+                                            <span class="vlt-btn__text">Get direction</span>
+                                            <span class="vlt-btn__icon vlt-btn__icon--right">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
 													<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-													<circle cx="12" cy="10" r="3" /></svg></span></a>
+													<circle cx="12" cy="10" r="3" />
+                                                </svg>
+                                            </span>
+                                        </a>
 									</div>
 									<div class="vlt-gap-70--sm"></div>
 								</div>
@@ -891,17 +505,15 @@
 												<textarea name="message" id="message" rows="3" placeholder="Message"></textarea>
 											</div>
 
-											<?php 
-												if(isset($_GET['error']))
-												{
-													echo '<div class="message success">Your message is successfully sent.</div>';
-												}
+											<?php
+                                               if (isset($_GET['error'])) {
+                                                   echo '<div class="message success">Your message is successfully sent.</div>';
+                                               }
 
-												if(isset($_GET['success']))
-												{
-													echo '<div class="message danger">Sorry something went wrong!</div>';
-												}
-											?>
+                                               if (isset($_GET['success'])) {
+                                                   echo '<div class="message danger">Sorry something went wrong!</div>';
+                                               }
+                                             ?>
 											<button class="vlt-btn vlt-btn--primary"><span class="vlt-btn__text">Contact Me</span><span class="vlt-btn__icon vlt-btn__icon--right"></span></button>
 										</form>
 									</div>
@@ -925,16 +537,11 @@
 			<div class="vlt-fullpage-slider-numbers"></div>
 		</div>
 		<!--Footer-->
-		<footer class="vlt-footer vlt-footer--fixed row">
-			<div class="vlt-fixed-socials col-6">
-				<a href="https://www.facebook.com/ahasun.h" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-				<a href="https://www.instagram.com/ahasun_habib/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-				<a href="https://www.linkedin.com/in/ahasu-h" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
-				<a href="https://github.com/Ahasun-h" target="_blank"><i class='bx bxl-git' ></i></a>
-			</div>
+		<footer class="vlt-footer vlt-footer--fixed ">
 			<!--Copyright-->
-			<div class="vlt-footer-copyright col-6">
-				<p>&copy; 2020 Copiright.<br>All rights reserved.</p>
+			<div class="vlt-footer-copyright row">
+                <div class="vlt-fixed-socials col-6"></div>
+				<p class="col-6">&copy; 2023 Copiright.<br>All rights reserved.</p>
 			</div>
 		</footer>
 	</main>
@@ -943,11 +550,12 @@
 	<script src="assets/scripts/vlt-plugins.min.js"></script>
 	<script src="assets/scripts/vlt-helpers.js"></script>
 	<script src="assets/scripts/vlt-controllers.js"></script>
-
 	<script src="assets/vendors/mixitup.min.js"></script>
 	<script src="assets/vendors/jquery.unveil.js"></script>
-
 	<script src="assets/scripts/extra.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js" integrity="sha512-smKadbDZ1g5bsWtP1BuWxgBq1WeP3Se1DLxeeBB+4Wf/HExJsJ3OV6lzravxS0tFd43Tp4x+zlT6/yDTtr+mew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 
 </html>

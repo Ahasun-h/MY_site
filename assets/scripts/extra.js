@@ -1,8 +1,7 @@
 /*===== Screen Loder  =====*/
-var preloder = document.getElementById('Loading');
 
-function screenLoad() {
-    preloder.style.display = 'none';
+function screenLoad(){
+    $("#pre_loader").hide();
 }
 
 
@@ -168,3 +167,7 @@ $(document).ready(function () {
 $(document).ready(function() {
     $('img').unveil();
 });
+
+
+
+
