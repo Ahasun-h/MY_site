@@ -24,7 +24,7 @@
 
 	<link rel="stylesheet" href="assets/css/plugins/slicknav.css" >
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/plugins/owl.carousel.min.css" />
 	
 	<style>
 	    .disclaimer{
@@ -32,7 +32,7 @@
 	    }
 	</style>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/vendors/jquery.min.js" ></script>
 <script src="data/index.js"></script>
 
 </head>
@@ -57,7 +57,6 @@
                 <span class="image">
                     <img src="assets/img/MY_IMAGE.png" alt="">
                 </span>
-
                 <div class="text logo-text">
                     <span class="name">Ahasun_H</span>
                     <span class="profession">Web developer</span>
@@ -141,10 +140,18 @@
 	<div class="vlt-offcanvas-menu">
 		<div class="vlt-offcanvas-menu__header">
 			<!--Locales-->
-			<nav class="vlt-offcanvas-menu__locales"><a class="active" href="#">Eng</a><a href="#">Fra</a><a href="#">Ger</a></nav>
-			<!--Menu Burger--><a class="vlt-menu-burger vlt-menu-burger--opened js-offcanvas-menu-close" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+			<nav class="vlt-offcanvas-menu__locales">
+                <a class="active" href="#">Eng</a>
+                <a href="#">Fra</a>
+                <a href="#">Ger</a>
+            </nav>
+			<!--Menu Burger-->
+            <a class="vlt-menu-burger vlt-menu-burger--opened js-offcanvas-menu-close" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
 					<line x1="18" y1="6" x2="6" y2="18" />
-					<line x1="6" y1="6" x2="18" y2="18" /></svg></a>
+					<line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </a>
 		</div>
 		<nav class="vlt-offcanvas-menu__navigation">
 			<!--Navigation-->
@@ -177,7 +184,7 @@
 		<!--Fullpage Slider-->
 		<div class="vlt-fullpage-slider" data-loop-top="" data-loop-bottom="" data-speed="800">
 			<!-- Start:Home Section-->
-			<section class="vlt-section pp-scrollable" data-anchor="Home" id="Home" data-brightness="dark" style="background-image: url(assets/img/root/hero-bg.png);">
+			<section class="vlt-section pp-scrollable" data-anchor="Home" id="Home" data-brightness="dark" style="background-image: url(/assets/img/root/hero-bg.png);">
 				<div class="vlt-section__vertical-align">
 					<div class="vlt-section__content">
 						<!--Particles-->
@@ -198,14 +205,14 @@
 										<div class="row">
 											<div class="col-auto">
 												<!--Counter Up Small-->
-												<div class="vlt-counter-up-small" data-ending-number="12" data-animation-speed="1000" data-delimiter=""><span class="counter" id="home_completed_project">0</span>
+												<div class="vlt-counter-up-small" data-ending-number="12" data-animation-speed="1000" data-delimiter=""><span class="counters" id="home_completed_project" >0</span>
 													<h6 class="vlt-display-1">Completed<br>projects</h6>
 												</div>
 												<div class="vlt-gap-20--sm"></div>
 											</div>
 											<div class="col-auto">
 												<!--Counter Up Small-->
-												<div class="vlt-counter-up-small" data-ending-number="6" data-animation-speed="1000" data-delimiter=""><span class="counter" id="home_satisfied_user">0</span>
+												<div class="vlt-counter-up-small" data-ending-number="6" data-animation-speed="1000" data-delimiter=""><span class="counters" id="home_satisfied_user">0</span>
 													<h6 class="vlt-display-1">Satisfied<br>customers</h6>
 												</div>
 											</div>
@@ -318,7 +325,7 @@
 								<div class="col-lg-4 offset-lg-1">
 									<div class="vlt-slide-photo">
 										<div class="vlt-slide-photo__inside">
-											<img id="my_image" src="assets/img/loding.gif" data-src="assets/img/my_image.jpg" alt="">
+											<img id="my_image" src="./assets/img/loding.gif" data-src="assets/img/my_image.jpg" alt="">
 										</div>
 										<div class="vlt-slide-photo__particle vlt-fade-in-bottom--small has-border-radius has-box-shadow" style="top: -50px; right: -40px; width: 100px; transition-delay: 300ms;"><img src="assets/img/root/parallax-particle-01.png" alt=""></div>
 										<div class="vlt-slide-photo__particle vlt-fade-in-bottom--small has-border-radius has-box-shadow" style="top: 40px; left: -30px; width: 80px; transition-delay: 600ms;"><img src="assets/img/root/parallax-particle-02.png" alt=""></div>
@@ -553,8 +560,9 @@
 	<script src="assets/vendors/mixitup.min.js"></script>
 	<script src="assets/vendors/jquery.unveil.js"></script>
 	<script src="assets/scripts/extra.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js" integrity="sha512-smKadbDZ1g5bsWtP1BuWxgBq1WeP3Se1DLxeeBB+4Wf/HExJsJ3OV6lzravxS0tFd43Tp4x+zlT6/yDTtr+mew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="assets/vendors/jquery.unveil.min.js"></script> -->
+    <script src="assets/vendors/owl.carousel.min.js"></script>
+	<script src="assets/scripts/custom.js"></script>
 
 </body>
 

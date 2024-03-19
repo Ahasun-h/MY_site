@@ -3,17 +3,17 @@
     "data": {
       "name": "MD.AHASUN HABIB",
       "profession": "Web Developer",
-      "complete_projects": "12",
-      "satisfied_customer": "3",
-      "background_image": "http://ahasun180.000webhostapp.com/assets/img/root/hero-bg.png",
+      "complete_projects": "42",
+      "satisfied_customer": "29",
+      "background_image": "assets/img/root/hero-bg.png",
       "cv_link": "https://www.google.com"
     }
   },
   {
     "service": {
       "year_of_experience": "4",
-      "section_title": "design and develop services for customers of all sizes, specializing in creating ",
-      "section_title_spacial": "stylish, modern websites, web services.",
+      "section_title": "Empowering companies, professional websites, innovative solutions, revenue growth, Full Stack web developer, Laravel, WordPress, Vue.js, JavaScript, ",
+      "section_title_spacial": "scalable business solutions.",
       "service_item": [
         {
           "name": "Web Design",
@@ -38,7 +38,7 @@
     "education": [
       {
         "certification": "B.Sc in Computer Science & Engineering",
-        "session": "2016 - Continue",
+        "session": "2016 - 2020",
         "institute_name": "Institute of Science Trade and Technology (ISTT)"
       },
       {
@@ -64,6 +64,11 @@
         "company_name": "Wardan Tech Limited",
         "work_experience": "2022 ( 6 Months )",
         "position": "Jr. Web Develope"
+      },
+      {
+        "company_name": "SoftVence",
+        "work_experience": "2023 - Continue",
+        "position": "Team Leader (Web Application & Mobile App Development)"
       }
     ]
   },
@@ -79,328 +84,417 @@
   {
     "about_me": {
       "name": "Md.Ahasun Habib",
-      "my_self": "As a web designer and developer, I have a strong passion for creating beautiful and functional websites and web applications. With a background in computer science and a strong foundation in web development technologies such as HTML, CSS, and JavaScript, I have the skills and knowledge needed to bring clients' visions to life. I have experience working on a variety of web design and development projects, ranging from simple brochure websites to complex e-commerce platforms. I am a creative problem-solver and enjoy working with clients to understand their needs and develop solutions that meet their goals.",
+      "my_self": "As a web designer and developer, Dedicated to assisting companies and startups in developing professional, business-oriented websites and implementing innovative solutions to address operational challenges, driving revenue generation. Proficient in Laravel, WordPress, Vue.js, and JavaScript, specializing in crafting efficient and scalable solutions with ease. Let's collaborate to elevate your online presence and business performance.",
       "date_of_birth": "23 Jun 1998",
       "gender": "Male",
       "mobile": "+8801966205647",
       "email": "habibahasun019@gmail.com",
       "address": "House No: 319, Road No: 13/A -Haji Ismail Dewan Road, Dewan City Mour, Azampur, Sector: 6, Dhaka, 1230",
-      "image": "http://ahasun180.000webhostapp.com/assets/img/my_image.jpg"
+      "image": "assets/img/my_image.jpg"
     }
   },
   {
-    "portfolio":{
-      "portfolio_menu":[
+    "portfolio": {
+      "portfolio_menu": [
         {
-          "menu":"All",
-          "data_filter":"all"
+          "menu": "All",
+          "data_filter": "all"
         },
         {
-          "menu":"Web Design",
-          "data_filter":".web_design"
+          "menu": "Web Design",
+          "data_filter": ".web_design"
         },
         {
-          "menu":"Wordpress",
-          "data_filter":".wordpress"
+          "menu": "Wordpress",
+          "data_filter": ".wordpress"
         },
         {
-          "menu":"Web Application",
-          "data_filter":".web_application"
+          "menu": "Web Application",
+          "data_filter": ".web_application"
         },
         {
-          "menu":"App Development",
-          "data_filter":".app_development"
+          "menu": "App Development",
+          "data_filter": ".app_development"
         }
-
       ],
-      "portfolio_item":[
+      "portfolio_item": [
         {
-          "portfolio_image":"http://ahasun180.000webhostapp.com/assets/img/portfolio/naioryo.png",
-          "portfolio_link":"https://www.naiyor.com.bd",
-          "portfolio_type":"web_design",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/naioryo.png",
+          "portfolio_link": "https://www.naiyor.com.bd",
+          "portfolio_type": "web_design",
+          "stacks": [
             {
-              "name":"HTML"
+              "name": "HTML"
             },
             {
-              "name":"SCSS"
+              "name": "SCSS"
             },
             {
-              "name":"Js"
+              "name": "Js"
             },
             {
-              "name":"Bootstrap"
+              "name": "Bootstrap"
             }
           ]
-
         },
         {
-          "portfolio_image":"http://ahasun180.000webhostapp.com/assets/img/portfolio/student_conner-min.png",
-          "portfolio_link":"https://www.studentcorner.co.uk/",
-          "portfolio_type":"web_design",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/student_conner-min.png",
+          "portfolio_link": "https://www.studentcorner.co.uk/",
+          "portfolio_type": "web_design",
+          "stacks": [
             {
-              "name":"HTML"
+              "name": "HTML"
             },
             {
-              "name":"CSS"
+              "name": "CSS"
             },
             {
-              "name":"Js"
+              "name": "Js"
             }
           ]
-
         },
         {
-          "portfolio_image":"https://ahasun180.000webhostapp.com/assets/img/portfolio/techno_outsource.png",
-          "portfolio_link":"http://www.technooutsourcebd.com/",
-          "portfolio_type":"web_design",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/techno_outsource.png",
+          "portfolio_link": "http://www.technooutsourcebd.com/",
+          "portfolio_type": "web_design",
+          "stacks": [
             {
-              "name":"HTML"
+              "name": "HTML"
             },
             {
-              "name":"CSS"
+              "name": "CSS"
             },
             {
-              "name":"Js"
+              "name": "Js"
             },
             {
-              "name":"Bootstrap"
-            }
-          ]
-
-        },
-        {
-          "portfolio_image":"https://ahasun180.000webhostapp.com/assets/img/portfolio/oneiroit.png",
-          "portfolio_link":"https://oneiroit.com/",
-          "portfolio_type":"web_application",
-          "stacks":[
-            {
-              "name":"laravel"
+              "name": "Bootstrap"
             }
           ]
         },
         {
-          "portfolio_image":"https://ahasun180.000webhostapp.com/assets/img/portfolio/educationcounsel.png",
-          "portfolio_link":"https://www.educationcounsel.org.uk/",
-          "portfolio_type":"web_application",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/oneiroit.png",
+          "portfolio_link": "https://oneiroit.com/",
+          "portfolio_type": "web_application",
+          "stacks": [
             {
-              "name":"laravel"
+              "name": "laravel"
             }
           ]
         },
         {
-          "portfolio_image":"http://ahasun180.000webhostapp.com/assets/img/portfolio/cyber_com.png",
-          "portfolio_link":"https://cybercombd.com/",
-          "portfolio_type":"wordpress",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/educationcounsel.png",
+          "portfolio_link": "https://www.educationcounsel.org.uk/",
+          "portfolio_type": "web_application",
+          "stacks": [
             {
-              "name":"Wordpress"
+              "name": "laravel"
             }
           ]
         },
         {
-          "portfolio_image":"http://ahasun180.000webhostapp.com/assets/img/portfolio/Elizabeth_Global_education-min.png",
-          "portfolio_link":"https://vas.smartofficemate.co.uk/",
-          "portfolio_type":"wordpress",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/cyber_com.png",
+          "portfolio_link": "https://cybercombd.com/",
+          "portfolio_type": "wordpress",
+          "stacks": [
             {
-              "name":"Wordpress"
+              "name": "Wordpress"
             }
           ]
         },
         {
-          "portfolio_image":"http://ahasun180.000webhostapp.com/assets/img/portfolio/SIG-ProPerties-min.png",
-          "portfolio_link":"http://sigproperties.smartofficemate.co.uk/",
-          "portfolio_type":"wordpress",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/Elizabeth_Global_education-min.png",
+          "portfolio_link": "https://vas.smartofficemate.co.uk/",
+          "portfolio_type": "wordpress",
+          "stacks": [
             {
-              "name":"Wordpress"
+              "name": "Wordpress"
             }
           ]
         },
         {
-          "portfolio_image":"https://ahasun180.000webhostapp.com/assets/img/portfolio/luxuryprl.png",
-          "portfolio_link":"https://www.luxuryprl.com/",
-          "portfolio_type":"wordpress",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/SIG-ProPerties-min.png",
+          "portfolio_link": "http://sigproperties.smartofficemate.co.uk/",
+          "portfolio_type": "wordpress",
+          "stacks": [
             {
-              "name":"Wordpress"
+              "name": "Wordpress"
             }
           ]
         },
         {
-          "portfolio_image":"https://ahasun180.000webhostapp.com/assets/img/portfolio/brandmarketbd.png",
-          "portfolio_link":"https://brandmarketbd.com/",
-          "portfolio_type":"wordpress",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/luxuryprl.png",
+          "portfolio_link": "https://www.luxuryprl.com/",
+          "portfolio_type": "wordpress",
+          "stacks": [
             {
-              "name":"Wordpress"
+              "name": "Wordpress"
             }
           ]
         },
         {
-          "portfolio_image":"https://ahasun180.000webhostapp.com/assets/img/portfolio/ATS.png",
-          "portfolio_link":"http://atsdev.smartofficemate.co.uk/login",
-          "portfolio_type":"web_application",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/brandmarketbd.png",
+          "portfolio_link": "https://brandmarketbd.com/",
+          "portfolio_type": "wordpress",
+          "stacks": [
             {
-              "name":"laravel"
+              "name": "Wordpress"
             }
           ]
         },
         {
-          "portfolio_image":"https://ahasun180.000webhostapp.com/assets/img/portfolio/bdtakah.png",
-          "portfolio_link":"http://clients.smartofficemate.co.uk",
-          "portfolio_type":"web_application",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/ATS.png",
+          "portfolio_link": "http://atsdev.smartofficemate.co.uk/login",
+          "portfolio_type": "web_application",
+          "stacks": [
             {
-              "name":"laravel"
+              "name": "laravel"
             }
           ]
         },
         {
-          "portfolio_image":"https://ahasun180.000webhostapp.com/assets/img/portfolio/ityadimart.png",
-          "portfolio_link":"https://ityadimart.com/",
-          "portfolio_type":"web_application",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/bdtakah.png",
+          "portfolio_link": "http://clients.smartofficemate.co.uk",
+          "portfolio_type": "web_application",
+          "stacks": [
             {
-              "name":"View Rendering"
+              "name": "laravel"
             }
           ]
         },
         {
-          "portfolio_image":"http://ahasun180.000webhostapp.com/assets/img/portfolio/food_club.png",
-          "portfolio_link":"https://play.google.com/store/apps/details?id=com.buyonia.foodclub",
-          "portfolio_type":"app_development",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/ityadimart.png",
+          "portfolio_link": "https://ityadimart.com/",
+          "portfolio_type": "web_application",
+          "stacks": [
             {
-              "name":"Android"
+              "name": "View Rendering"
             }
           ]
         },
         {
-          "portfolio_image":"http://ahasun180.000webhostapp.com/assets/img/portfolio/property_Rental.png",
-          "portfolio_link":"https://github.com/Ahasun-h/PropertyRental",
-          "portfolio_type":"app_development",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/food_club.png",
+          "portfolio_link": "https://play.google.com/store/apps/details?id=com.buyonia.foodclub",
+          "portfolio_type": "app_development",
+          "stacks": [
             {
-              "name":"Android"
+              "name": "Android"
             }
           ]
         },
         {
-          "portfolio_image":"http://ahasun180.000webhostapp.com/assets/img/portfolio/Karigor.png",
-          "portfolio_link":"https://github.com/Ahasun-h/KarigorBangla",
-          "portfolio_type":"app_development",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/property_Rental.png",
+          "portfolio_link": "https://github.com/Ahasun-h/PropertyRental",
+          "portfolio_type": "app_development",
+          "stacks": [
             {
-              "name":"Android"
+              "name": "Android"
             }
           ]
         },
         {
-          "portfolio_image":"http://ahasun180.000webhostapp.com/assets/img/portfolio/lets_chat.png",
-          "portfolio_link":"https://github.com/Ahasun-h/Lets_Chat",
-          "portfolio_type":"app_development",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/Karigor.png",
+          "portfolio_link": "https://github.com/Ahasun-h/KarigorBangla",
+          "portfolio_type": "app_development",
+          "stacks": [
             {
-              "name":"Android"
+              "name": "Android"
             }
           ]
         },
         {
-          "portfolio_image":"http://ahasun180.000webhostapp.com/assets/img/portfolio/corona_update.png",
-          "portfolio_link":"https://github.com/Ahasun-h/CoronaUpdateToday",
-          "portfolio_type":"app_development",
-          "stacks":[
+          "portfolio_image": "assets/img/portfolio/lets_chat.png",
+          "portfolio_link": "https://github.com/Ahasun-h/Lets_Chat",
+          "portfolio_type": "app_development",
+          "stacks": [
             {
-              "name":"Android"
+              "name": "Android"
+            }
+          ]
+        },
+        {
+          "portfolio_image": "assets/img/portfolio/corona_update.png",
+          "portfolio_link": "https://github.com/Ahasun-h/CoronaUpdateToday",
+          "portfolio_type": "app_development",
+          "stacks": [
+            {
+              "name": "Android"
+            }
+          ]
+        },
+        {
+          "portfolio_image": "assets/img/portfolio/colinhartlieb.png",
+          "portfolio_link": "https://colinswolfpack.com",
+          "portfolio_type": "web_application",
+          "stacks": [
+            {
+              "name": "Laravel"
+            },
+            {
+              "name": "Project Planning"
+            },
+            {
+              "name": "Database Design"
+            }
+          ]
+        },
+        {
+          "portfolio_image": "assets/img/portfolio/bellscan.png",
+          "portfolio_link": "https://bellscan.com/",
+          "portfolio_type": "web_application",
+          "stacks": [
+            {
+              "name": "Laravel"
+            },
+            {
+              "name": "Project Planning"
+            },
+            {
+              "name": "Database Design"
+            }
+          ]
+        },
+        {
+          "portfolio_image": "assets/img/portfolio/smothermanlaw.png",
+          "portfolio_link": "http://smothermanlaw.com",
+          "portfolio_type": "wordpress",
+          "stacks": [
+            {
+              "name": "Wordpress"
+            },
+            {
+              "name": "Project Planning"
+            }
+          ]
+        },
+        {
+          "portfolio_image": "assets/img/portfolio/phonesavers.png",
+          "portfolio_link": "https://phonesavers.ie",
+          "portfolio_type": "wordpress",
+          "stacks": [
+            {
+              "name": "Wordpress"
+            }
+          ]
+        },
+        {
+          "portfolio_image": "assets/img/portfolio/wellthwell.png",
+          "portfolio_link": "https://wellthwell.com",
+          "portfolio_type": "wordpress",
+          "stacks": [
+            {
+              "name": "Wordpress"
+            }
+          ]
+        },
+        {
+          "portfolio_image": "assets/img/portfolio/virtualbones.png",
+          "portfolio_link": "https://virtualbones.com",
+          "portfolio_type": "wordpress",
+          "stacks": [
+            {
+              "name": "Wordpress"
+            }
+          ]
+        },
+        {
+          "portfolio_image": "assets/img/portfolio/virtualbones.png",
+          "portfolio_link": "https://virtualbones.com",
+          "portfolio_type": "wordpress",
+          "stacks": [
+            {
+              "name": "Wordpress"
+            }
+          ]
+        },
+        {
+          "portfolio_image": "assets/img/portfolio/eustaff.png",
+          "portfolio_link": "https://eustaff.se",
+          "portfolio_type": "wordpress",
+          "stacks": [
+            {
+              "name": "Wordpress"
             }
           ]
         }
-
       ]
     }
   },
   {
-    "testimonial":{
-      "testimonial_item":[
+    "testimonial": {
+      "testimonial_item": [
         {
-          "name":"Mahzabin Akter Sarna",
-          "position":"Founder, Loveableskin",
-          "content":"I have made so many deals with so many web designers, but only he is able to satisfy me with great professional work among all. Their quality of work is outstanding.",
-          "image":"http://ahasun180.000webhostapp.com/assets/img/testimonials/manager.png"
+          "name": "Mahzabin Akter Sarna",
+          "position": "Founder, Loveableskin",
+          "content": "I have made so many deals with so many web designers, but only he is able to satisfy me with great professional work among all. Their quality of work is outstanding.",
+          "image": "assets/img/testimonials/manager.png"
         },
         {
-          "name":"Rocey Hasan",
-          "position":"Managing Director, MNS TEX Sourcing",
-          "content":"Quality and time are always important for me. I can assure anyone that, he is the most reliable tech person I have ever worked with. Hemaintain the best quality as much as possible and try their best to maintain the required deadline.",
-          "image":"http://ahasun180.000webhostapp.com/assets/img/testimonials/rocy.jpg"
+          "name": "Rocey Hasan",
+          "position": "Managing Director, MNS TEX Sourcing",
+          "content": "Quality and time are always important for me. I can assure anyone that, he is the most reliable tech person I have ever worked with. Hemaintain the best quality as much as possible and try their best to maintain the required deadline.",
+          "image": "assets/img/testimonials/rocy.jpg"
         },
         {
-          "name":"Nurul Alam Siddik Babu",
-          "position":"CEO, Brand Market BD",
-          "content":"Recently I have taken great support in learning about accessing my woo-commerce website. I am really amazed by his friendly and helpful behavior and excellent work on my website. His work is really satisfying.",
-          "image":"http://ahasun180.000webhostapp.com/assets/img/testimonials/Nurul_Alam.jpg"
+          "name": "Nurul Alam Siddik Babu",
+          "position": "CEO, Brand Market BD",
+          "content": "Recently I have taken great support in learning about accessing my woo-commerce website. I am really amazed by his friendly and helpful behavior and excellent work on my website. His work is really satisfying.",
+          "image": "assets/img/testimonials/Nurul_Alam.jpg"
         }
       ],
-      "work_with":[
+      "work_with": [
         {
-          "name":"Loveableskin",
-          "image":"http://ahasun180.000webhostapp.com/assets/img/client_logo/22.jpg"
+          "name": "Loveableskin",
+          "image": "assets/img/client_logo/22.jpg"
         },
         {
-          "name":"MNS-TEX-Sourcing",
-          "image":"http://ahasun180.000webhostapp.com/assets/img/client_logo/45.jpg"
+          "name": "MNS-TEX-Sourcing",
+          "image": "assets/img/client_logo/45.jpg"
         },
         {
-          "name":"brandmarketbd.com",
-          "image":"http://ahasun180.000webhostapp.com/assets/img/client_logo/brandmarket.jpg"
+          "name": "brandmarketbd.com",
+          "image": "assets/img/client_logo/brandmarket.jpg"
         },
         {
-          "name":"NaiyorBD",
-          "image":"http://ahasun180.000webhostapp.com/assets/img/client_logo/Naiyor-Logo.png"
+          "name": "NaiyorBD",
+          "image": "assets/img/client_logo/Naiyor-Logo.png"
         },
         {
-          "name":"TechNoOutSource",
-          "image":"http://ahasun180.000webhostapp.com/assets/img/client_logo/techno.png"
+          "name": "TechNoOutSource",
+          "image": "assets/img/client_logo/techno.png"
         },
         {
-          "name":"Buyoniasoft",
-          "image":"http://ahasun180.000webhostapp.com/assets/img/client_logo/buyoniasoft.png"
+          "name": "Buyoniasoft",
+          "image": "assets/img/client_logo/buyoniasoft.png"
         }
       ]
     }
   },
   {
-    "contact":{
-      "email":"habibahasun019@gmail.com",
-      "mobile_number":"+8801966205647",
-      "location":"https://goo.gl/maps/rwHUadVtYn7SPuwK6"
+    "contact": {
+      "email": "habibahasun019@gmail.com",
+      "mobile_number": "+8801966205647",
+      "location": "https://goo.gl/maps/rwHUadVtYn7SPuwK6"
     }
   },
   {
-    "social_link":[
+    "social_link": [
       {
-        "icon":"bx bxl-linkedin-square",
-        "link":"https://www.linkedin.com/in/ahasu-h/"
+        "icon": "bx bxl-linkedin-square",
+        "link": "https://www.linkedin.com/in/ahasu-h/"
       },
       {
-        "icon":"bx bxl-facebook-circle",
-        "link":"https://www.facebook.com/ahasun.h"
+        "icon": "bx bxl-facebook-circle",
+        "link": "https://www.facebook.com/ahasun.h"
       },
       {
-        "icon":"bx bxl-instagram-alt",
-        "link":"https://www.instagram.com/ahasun_habib/"
+        "icon": "bx bxl-instagram-alt",
+        "link": "https://www.instagram.com/ahasun_habib/"
       },
       {
-        "icon":"bx bxl-git",
-        "link":"https://github.com/Ahasun-h"
+        "icon": "bx bxl-git",
+        "link": "https://github.com/Ahasun-h"
       }
     ]
   }
-
 ]

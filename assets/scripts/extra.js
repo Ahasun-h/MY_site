@@ -1,5 +1,4 @@
 /*===== Screen Loder  =====*/
-
 function screenLoad(){
     $("#pre_loader").hide();
 }
@@ -80,11 +79,11 @@ $(document).ready(function () {
     
 
     // Sidebar  Menu Auto Select for scrolling
-    
     el.find('.pp-scrollable').on('scroll', function () {
         var section = el.find('.vlt-section.active').attr('id');
 
         if( section == 'Home' ){
+            // Remove active class from all menu items
             $('.menu_bar_item').removeClass('active');
             $('.menu_home').addClass('active');
         }
@@ -119,6 +118,14 @@ $(document).ready(function () {
             $('.menu_contact').addClass('active');
         }
     })
+
+    // Click event handler for menu items
+    $('.menu_bar_item').on('click', function () {
+        // Remove active class from all menu items
+        $('.menu_bar_item').removeClass('active');
+        // Add active class to the clicked menu item
+        $(this).addClass('active');
+    });
 
     // Mobile Menu Auto Select for scrolling
     el.find('.pp-scrollable').on('scroll', function () {
@@ -165,7 +172,7 @@ $(document).ready(function () {
 
 // unveil function
 $(document).ready(function() {
-    $('img').unveil();
+    $('img').unveil(100);
 });
 
 
