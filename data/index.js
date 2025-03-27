@@ -260,7 +260,7 @@ function portfolio() {
                 '<div class="portfolio_item col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mix ' +
                 data[6].portfolio.portfolio_item[i].portfolio_type +
                 '" data-ref="mixitup-target">\n' +
-                '  <img class="images"  id="portfolio_image" src="assets/img/loding.gif" data-src="' +
+                '  <img class="images lazy" id="portfolio_image" src="assets/img/image-preloader.gif" data-src="' +
                 data[6].portfolio.portfolio_item[i].portfolio_image +
                 '" loading="lazy">\n' +
                 '  <div class="stacks" style=""><div class="row position-relative m-0">' +
@@ -277,6 +277,7 @@ function portfolio() {
             );
         }
         var mixer = mixitup("#portfolio_item");
+        lazyLoadImages();
     }).fail(function () {
         console.log("Data Error");
     });

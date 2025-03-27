@@ -171,9 +171,27 @@ $(document).ready(function () {
 })
 
 // unveil function
-$(document).ready(function() {
-    $('img').unveil(100);
-});
+// $(document).ready(function() {
+//     $('img').unveil(100);
+// });
+
+function lazyLoadImages() {
+    const images = document.querySelectorAll('img[data-src]');
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.getAttribute('data-src');
+                img.removeAttribute('data-src');
+                observer.unobserve(img);
+            }
+        });
+    }, {
+        rootMargin: "100px", // preload before it appears
+    });
+
+    images.forEach(img => observer.observe(img));
+}
 
 
 
