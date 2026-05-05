@@ -4,6 +4,8 @@ import { useEffect, useRef, Suspense } from "react";
 import dynamic from "next/dynamic";
 import { homeData, aboutMeData, contactData, techStacks, serviceData } from "@/data/siteData";
 import { useGsapHeroEntrance } from "@/hooks/useGsap";
+import { useScrollProgress } from "@/hooks/useScrollProgress";
+import Scene3D from "@/components/Scene3D";
 
 const ParticleField = dynamic(() => import("@/components/ParticleField"), {
   ssr: false,
@@ -52,6 +54,7 @@ function MarqueeRow({ items, direction }: { items: string[]; direction: "left" |
 
 export default function HomeSection({ isActive }: { isActive: boolean }) {
   const sectionRef = useGsapHeroEntrance();
+  const scrollProgress = useScrollProgress();
 
   return (
     <section
@@ -64,6 +67,9 @@ export default function HomeSection({ isActive }: { isActive: boolean }) {
       <Suspense fallback={null}>
         <ParticleField />
       </Suspense>
+
+      {/* 3D Model with Scroll Animation */}
+      <Scene3D scrollProgress={scrollProgress} />
 
       <div className="hero-spotlight" />
 

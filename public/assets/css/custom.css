@@ -193,3 +193,29 @@
 	font-weight: 300;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+/* 3D Model Container */
+.hero-3d-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	z-index: 1;
+	pointer-events: auto;
+}
+
+@media only screen and (max-width: 991px) {
+	.hero-3d-container {
+		width: 100%;
+		opacity: 0.8;
+		pointer-events: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.hero-3d-container {
+		opacity: 0.7;
+		pointer-events: none;
+	}
+}
